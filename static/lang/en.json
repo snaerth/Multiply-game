@@ -1,0 +1,26 @@
+{
+  "gameName": "Multiply game",
+  "specialField": "Special field",
+  "specialFieldShortDesc":
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  "specialFieldDesc":
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  "specialFieldLink": "Explore our specials",
+  "projects": "Projects",
+  "projectsShortDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  "projectsDesc":
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  "projectsLink": "Explore our works",
+  "aboutUs": "About us",
+  "partners": "Partners",
+  "partnersShortDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  "partnersDesc":
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  "partnersLink": "Explore our partners",
+  "employees": "Employees",
+  "prev": "Previous",
+  "next": "Next",
+  "newGame": "New game",
+  "restartGame": "Restart game",
+  "topScores": "Top scores"
+}

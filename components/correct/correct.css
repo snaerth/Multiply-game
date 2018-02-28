@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  transform: scale(1);
+  display: inline-block;
+  transform-origin: 50% 0%;
+}
+
+.sprinkle {
+  position: absolute;
+  top: 50px;
+  left: 52px;
+  transform: rotate(36deg);
+}
+
+.sprinkle:nth-child(2) {
+  transform: rotate(108deg);
+}
+
+.sprinkle:nth-child(3) {
+  transform: rotate(180deg);
+}
+
+.sprinkle:nth-child(4) {
+  transform: rotate(252deg);
+}
+
+.sprinkle:nth-child(5) {
+  transform: rotate(324deg);
+}
+
+.circle {
+  position: absolute;
+  content: '';
+  background: black;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  margin-top: -28px;
+}

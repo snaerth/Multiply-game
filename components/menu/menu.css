@@ -1,0 +1,66 @@
+.container {
+  position: fixed;
+  top: 52px;
+  z-index: 1;
+  flex: 100%;
+  margin-left: -100%;
+  height: 100%;
+  width: 100%;
+  background: var(--menu-background);
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+  transition: margin 200ms ease;
+}
+
+.open {
+  margin-left: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown ul {
+  margin: 0;
+}
+
+.dropdown ul li {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown ul li a {
+  display: inline-block;
+  padding: 1em 18px 1em 33px;
+  width: 100%;
+  color: #fff;
+  white-space: pre;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 30px;
+  transition: background 0.15s ease-in-out;
+}
+
+.dropdown ul li a.active,
+.dropdown ul li a:hover {
+  background: var(--menu-background-hover);
+}
+
+.dropdown ul li a svg {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  fill: #fff;
+}
+
+.dropdown.active ul {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: none;
+  }
+}
