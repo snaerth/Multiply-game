@@ -1,8 +1,8 @@
 .container {
-  color: #ffffff;
+  color: var(--color-white);
   text-align: center;
   letter-spacing: 0.05em;
   font-size: 80px;
   color: #daf6ff;
-  text-shadow: 0 0 20px #0aafe6;
+  text-shadow: 0 0 20px #e86dec;
 }

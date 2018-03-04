@@ -21,7 +21,7 @@ class Multiply extends Component {
     this.state = {
       data: this.data,
       score: 0,
-      max: 20,
+      max: 3,
       reset: false,
       start: false,
       stop: true,
@@ -80,16 +80,16 @@ class Multiply extends Component {
     const { value } = event.target;
     const next = currentIndex + 1;
 
-    if (currentIndex === max) {
+    if (next === max) {
       this.setState({
         gameOver: true,
       });
     } else {
+      this.setState({ value, currentIndex: next });
+
       if (currentAnswer.toString().length === value.toString().length) {
         let newState = {
-          value,
           correct: false,
-          currentIndex: next,
           currentQuestion: this.formatMultiply(data[next], true),
           currentAnswer: data[next][2],
           shake: true,
@@ -110,15 +110,13 @@ class Multiply extends Component {
 
         setTimeout(() => {
           this.setState(newState);
-        }, 100);
+        }, 200);
 
         this.timeoutShakeId = setTimeout(() => {
           this.setState({
             correct: false,
           });
         }, 700);
-      } else {
-        this.setState({ value });
       }
 
       // If not correct answer

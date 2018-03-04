@@ -13,10 +13,10 @@ import 'isomorphic-unfetch';
 
 class Index extends Component {
   static async getInitialProps({ req, store, isServer }) {
-    let lang = 'en';
+    let lang = 'is';
 
     if (isServer) {
-      lang = req.cookies.lang;
+      lang = req.cookies.lang || 'is';
     }
 
     const res = await fetch(`${process.env.LOCAL_URL}/static/lang/${lang}.json`);
